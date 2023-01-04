@@ -15,4 +15,4 @@ RUN apk --no-cache add wget &&\
 
 EXPOSE 8080
 
-ENTRYPOINT exec ./mcl
+ENTRYPOINT exec  ["/bin/bash", "-c", "./mcl"]
